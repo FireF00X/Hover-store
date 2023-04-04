@@ -158,7 +158,8 @@ logInButton.onclick = (e) => {
     } else {
         logInError.innerHTML = "";
         // move to store
-        window.location.href = "../mainPage.html"
+        window.location.replace( https://github.com/FireF00X/Hover-store/mainPage.html)
+
     }
 }
 // ======================
