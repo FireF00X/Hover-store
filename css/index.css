@@ -226,7 +226,23 @@ ul {
 .main .form-box .have-acc a {
     color: var(--main-blue);
 }
+@media (max-width:320px) {
+    .main .login .form-box .header {
+        text-align: center;
+    }
 
+    .main .login .form-box .header h1 {
+        white-space: nowrap;
+    }
+
+    .main .form-box form .remember {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+    .main .login .form-box .have-acc{
+        margin-top: 40px;
+    }
+}
 /* end login page */
 /* start sign up page */
 .main .signup .done {
@@ -238,7 +254,7 @@ ul {
 }
 
 .main .signup .done .msg {
-    width: 20%;
+    width: fit-content;
     background: #66bb6a;
     padding: 20px;
     border-radius: 8px;
