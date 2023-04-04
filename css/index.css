@@ -68,7 +68,7 @@ ul {
 }
 
 .main .login .google-log .msg {
-    width: 20%;
+    width: fit-content;
     background: white;
     padding: 20px;
     border-radius: 8px;
