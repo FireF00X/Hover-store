@@ -158,7 +158,7 @@ logInButton.onclick = (e) => {
     } else {
         logInError.innerHTML = "";
         // move to store
-        window.location.replace(../mainPage.html)
+        window.location.href="/mainPage.html";
 
     }
 }
