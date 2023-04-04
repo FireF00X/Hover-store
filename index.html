@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tap icone -->
+    <link rel="icon" type="image/png" href="./images/icon.png">
+    <!-- css file -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Normalize file -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- fontawesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>HS</title>
+</head>
+
+<body>
+    <div class="main flex-center">
+        <!-- start login page -->
+        <div class="login flex-center w-100 h-100">
+            <!-- login using goolge -->
+            <div class="google-log flex-center w-100 h-100 closed">
+                <div class="msg">
+                    <h3>Not Available Now</h3>
+                    <button id="close" class='pointer'>Close</button>
+                </div>
+            </div>
+            <!-- ends login using google -->
+            <div class="photo flex-center h-100 ">
+                <img src="./images/login.png" alt="" class="w-100">
+            </div>
+            <div class="form-box flex-center h-100">
+                <div class="header flex-center">
+                    <h1>Hello Again</h1>
+                    <p>Login to discover our newest products</p>
+                </div>
+                <form>
+                    <div class="error"></div>
+                    <div class="input-container flex-center">
+                        <input type="email" name="login/email" id="login-email">
+                        <span class="login-email-lable">Email</span>
+                        <div class="flex-center icone pointer"><i class="fa-solid fa-at "></i></div>
+                    </div>
+                    <div class="input-container flex-center">
+                        <input type="password" name="login/password" id="login-password">
+                        <span class="login-pass-lable">Password</span>
+                        <div class="flex-center pointer icone"><i class="fa-solid fa-lock "></i></div>
+                    </div>
+                    <div class="remember">
+                        <div class="check">
+                            <input type="checkbox" name="remember">
+                            <label for="remember">Remember Me</label>
+                        </div>
+                        <a id="forget" href="">Forget Password?</a>
+                    </div>
+                    <div class="buttons">
+                        <input id="login-button" class="login-btn pointer" type="submit" value="Login" />
+                        <div class="google">
+                            <button id="google-button" class="pointer"><i class="fa-brands fa-google"></i>Sign In With Google</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="have-acc">Don't have an account Yet ? <a id="signUp" href="#">Sign Up</a></p>
+            </div>
+        </div>
+        <!-- end login page -->
+        <!-- start signin page -->
+        <div class="signup flex-center w-100 h-100 closed">
+            <div class="done flex-center w-100 h-100 closed">
+                <div class="msg">
+                    <h3>Signed Up Succesfuly</h3>
+                </div>
+            </div>
+            <div class="photo flex-center h-100">
+                <img src="./images/Signup.png" alt="" class="w-100">
+            </div>
+            <div class="form-box flex-center h-100">
+                <button id="reset" class="back-button flex-center pointer">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <div class="header flex-center">
+                    <h1>Sign Up</h1>
+                    <p>Discover All Of Our Products Now</p>
+                </div>
+                <form>
+                    <div class="error"></div>
+                    <div class="name w-100">
+                        <div class="input-container flex-center">
+                            <input class="signup-first-name" id="signup-first-name" type="text" name="First/Name">
+                            <div class="flex-center icone"><i class="fa-solid fa-eye"></i></div>
+                            <span id="first-span">First Name</span>
+                        </div>
+                        <div class="input-container flex-center">
+                            <input class="signup-last-name" type="text" name="Last/Name" id="signup-last-name">
+                            <div class="flex-center icone"><i class="fa-solid fa-eye"></i></div>
+                            <span id="sec-span">Last Name</span>
+                        </div>
+                    </div>
+                    <div class="input-container flex-center">
+                        <input id="signup-email" type="email" name="Email">
+                        <div class="flex-center icone email"><i class="fa-solid fa-eye"></i></div>
+                        <span id="email-span">Email</span>
+                    </div>
+                    <div class="input-container flex-center">
+                        <input id='signup-password' type="password" name="Password">
+                        <span id="signup-pass-span">New Password</span>
+                        <div class="flex-center signup icone pointer">
+                            <i class="eye fa-solid fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="input-container flex-center">
+                        <input type="password" name="repassword" id="signup-repassword">
+                        <span id="signup-repass-span">Re-Enter Password</span>
+                        <div class=" flex-center bro icone pointer"><i class="eye-2 fa-solid fa-eye"></i></div>
+                    </div>
+                    <div class="buttons">
+                        <input class="login-btn pointer" id="signup-button" type="submit" value="Sing Up Now" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- end signin page -->
+        <!-- start forget page -->
+        <div class="forget flex-center w-100 h-100 closed">
+            <div class="photo flex-center h-100">
+                <img src="./images/ForgotPassword.png" alt="" class="w-100">
+            </div>
+            <div class="form-box flex-center h-100">
+                <button id="reset-2" class="back-button flex-center pointer">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <div class="header flex-center">
+                    <h1>Forget Your Password ?</h1>
+                    <p>Let's See How can we Recover it</p>
+                </div>
+                <form>
+                    <div class="error"></div>
+                    <div class="input-container flex-center">
+                        <input type="email" name="" id="">
+                        <div class="flex-center icone pointer"><i class="fa-solid fa-arrow-right"></i></div>
+                        <span>Enter Your Email</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- end forget page -->
+    </div>
+    <script src="./js/hover-store.js"></script>
+</body>
+
+</html>

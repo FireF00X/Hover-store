@@ -1,0 +1,318 @@
+/* roots */
+:root {
+    --main-blue: #4488fe;
+    --gray-color: #c5c3c2;
+}
+
+
+/* start global rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/* end global rules */
+/* start reused class */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.closed {
+    display: none;
+}
+
+/* end reused class  */
+/* start login page */
+.main {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main .login {
+    position: relative;
+    flex-direction: row;
+}
+
+.main .login .google-log {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main .login .google-log .msg {
+    width: 20%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.main .login .google-log .msg {
+    text-align: center;
+}
+
+.main .login .google-log .msg button {
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: var(--main-blue);
+    color: white;
+    width: 100%;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.main .photo {
+    width: 40%;
+    background-color: var(--main-blue);
+}
+
+@media(max-width:767px) {
+    .main .photo {
+        display: none;
+    }
+}
+
+.main .form-box {
+    flex-direction: column;
+    width: 60%;
+    margin-top: 100px;
+}
+
+.main .form-box .header {
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.main .form-box .header h1 {
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+.main .form-box .header p {
+    margin-top: 0;
+    color: var(--gray-color);
+}
+
+.main .form-box form .error {
+    font-size: 15px;
+    color: #DC3545;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main .form-box form .input-container {
+    position: relative;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid var(--gray-color);
+    justify-content: space-between;
+}
+
+.main .form-box form .input-container span {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #444;
+    font-size: 14px;
+    background: white;
+    border-radius: 50px;
+    padding: 5px 10px;
+    transition: top .3s linear;
+    z-index: -1;
+}
+
+.main .form-box form .input-container input:focus~span {
+    top: -5px;
+    z-index: 0;
+    background-color: white;
+}
+
+.main .form-box form .input-container input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    background-color: transparent;
+    font-size: 13px;
+}
+
+.main .form-box form .input-container .icone {
+    position: relative;
+    background-color: var(--main-blue);
+    color: white;
+    padding: 10px;
+}
+
+.main .form-box form .remember {
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.main .form-box form .remember a {
+    color: var(--main-blue);
+}
+
+.main .form-box form .buttons input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px 0;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background: var(--main-blue);
+    color: white;
+    font-weight: bold;
+}
+
+.main .form-box form .buttons .google:hover {
+    transition: .3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.main .form-box form .buttons .google button {
+    padding: 8px 0;
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--gray-color);
+    outline: none;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.main .form-box form .buttons .google button i {
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.main .login .form-box .have-acc {
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+
+.main .form-box .have-acc a {
+    color: var(--main-blue);
+}
+
+/* end login page */
+/* start sign up page */
+.main .signup .done {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main .signup .done .msg {
+    width: 20%;
+    background: #66bb6a;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.main .signup .done .msg {
+    text-align: center;
+}
+
+.main .signup .form-box {
+    margin-top: 0;
+    position: relative;
+}
+
+.main .form-box .back-button {
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    background-color: #eee;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.main .signup .form-box form {
+    width: 45%;
+}
+
+@media(max-width:767px) {
+    .main .signup .form-box form {
+        width: 100%;
+    }
+
+    .main .signup .form-box .back-button {
+        left: 0px;
+        top: 50px;
+    }
+}
+
+.signup .form-box .name {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.signup .form-box .name .icone,
+.signup .form-box .input-container .email {
+    visibility: hidden;
+}
+
+/* end sign up page */
+/* start  forget page */
+
+
+.main .forget .form-box {
+    margin-top: 0;
+    position: relative;
+}
+
+.main .forget .form-box form {
+    width: 70%;
+}
+
+@media(max-width:767px) {
+    .main .forget .header h1 {
+        font-size: 35px;
+    }
+
+    .main .forget .form-box .back-button {
+        left: 0px;
+        top: 50px;
+    }
+}
+
+/* end  forget page */
