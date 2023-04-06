@@ -151,7 +151,9 @@ logInButton.onclick = (e) => {
     let ObjOfBackedData = JSON.parse(storageData);
 
 
-    if (logInEmail.value !== ObjOfBackedData['Email']) {
+    if (logInEmail.value === "") {
+        logInError.innerHTML = "You Should sign up first";
+    }else if (logInEmail.value !== ObjOfBackedData['Email']) {
         logInError.innerHTML = "You Should sign up first";
     } else if (logInPass.value !== ObjOfBackedData['Password']) {
         logInError.innerHTML = "Wrong Password";

@@ -122,6 +122,10 @@ ul {
     color: var(--gray-color);
 }
 
+.main .form-box form {
+    width: 50%;
+}
+
 .main .form-box form .error {
     font-size: 15px;
     color: #DC3545;
@@ -226,6 +230,7 @@ ul {
 .main .form-box .have-acc a {
     color: var(--main-blue);
 }
+
 @media (max-width:320px) {
     .main .login .form-box .header {
         text-align: center;
@@ -239,10 +244,12 @@ ul {
         font-size: 10px;
         white-space: nowrap;
     }
-    .main .login .form-box .have-acc{
+
+    .main .login .form-box .have-acc {
         margin-top: 40px;
     }
 }
+
 /* end login page */
 /* start sign up page */
 .main .signup .done {
