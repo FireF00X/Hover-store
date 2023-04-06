@@ -153,14 +153,14 @@ logInButton.onclick = (e) => {
 
     if (logInEmail.value === "") {
         logInError.innerHTML = "You Should sign up first";
-    }else if (logInEmail.value !== ObjOfBackedData['Email']) {
+    } else if (logInEmail.value !== ObjOfBackedData['Email']) {
         logInError.innerHTML = "You Should sign up first";
     } else if (logInPass.value !== ObjOfBackedData['Password']) {
         logInError.innerHTML = "Wrong Password";
     } else {
         logInError.innerHTML = "";
         // move to store
-        window.location.href = "https://firef00x.github.io/mainPage.html";
+        window.location.href = "https://firef00x.github.io/StorePage/";
     }
 }
 // ======================
